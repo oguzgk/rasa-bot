@@ -1,0 +1,193 @@
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Baş ağrısı tedavisi
+  steps:
+    - intent: bas_agrisi
+    - action: utter_bas_agrisi
+
+- story: Mide bulantısı tedavisi
+  steps:
+    - intent: mide_bulantisi
+    - action: utter_mide_bulantisi
+
+- story: İshal tedavisi
+  steps:
+    - intent: ishal
+    - action: utter_ishal
+
+- story: Soğuk algınlığı tedavisi
+  steps:
+    - intent: soguk_alginligi
+    - action: utter_soguk_alginligi
+
+- story: Boğaz ağrısı tedavisi
+  steps:
+    - intent: bogaz_agrisi
+    - action: utter_bogaz_agrisi
+
+
+- story: Uykusuzluk tedavisi
+  steps:
+    - intent: uykusuzluk
+    - action: utter_uykusuzluk
+
+- story: Göz yorgunluğu tedavisi
+  steps:
+    - intent: goz_yorgunlugu
+    - action: utter_goz_yorgunlugu
+
+- story: Sırt ağrısı tedavisi
+  steps:
+    - intent: sirt_agrisi
+    - action: utter_sirt_agrisi
+
+- story: Gaz ve şişkinlik tedavisi
+  steps:
+    - intent: gaz_siskinlik
+    - action: utter_gaz_siskinlik
+
+- story: Burun tıkanıklığı tedavisi
+  steps:
+    - intent: burun_tikanikligi
+    - action: utter_burun_tikanikligi
+
+- story: Kulak ağrısı tedavisi
+  steps:
+    - intent: kulak_agrisi
+    - action: utter_kulak_agrisi
+
+- story: Cilt kuruluğu tedavisi
+  steps:
+    - intent: cilt_kurulugu
+    - action: utter_cilt_kurulugu
+
+- story: Hemoroid tedavisi
+  steps:
+    - intent: hemoroid
+    - action: utter_hemoroid
+
+- story: Benler tedavisi
+  steps:
+    - intent: benler
+    - action: utter_benler
+
+- story: Cilt lekeleri tedavisi
+  steps:
+    - intent: cilt_lekeleri
+    - action: utter_cilt_lekeleri
+
+- story: Saç dökülmesi tedavisi
+  steps:
+    - intent: sac_dokulmesi
+    - action: utter_sac_dokulmesi
+
+- story: Sivilce tedavisi
+  steps:
+    - intent: sivilce
+    - action: utter_sivilce
+
+- story: Egzama tedavisi
+  steps:
+    - intent: egzama
+    - action: utter_egzama
+
+- story: Mantar enfeksiyonları tedavisi
+  steps:
+    - intent: mantar_enfeksiyonlari
+    - action: utter_mantar_enfeksiyonlari
+
+- story: Göz enfeksiyonları tedavisi
+  steps:
+    - intent: goz_enfeksiyonlari
+    - action: utter_goz_enfeksiyonlari
+
+- story: Diş ağrısı tedavisi
+  steps:
+    - intent: dis_agrisi
+    - action: utter_dis_agrisi
+
+- story: Ağız yaraları tedavisi
+  steps:
+    - intent: agiz_yaralari
+    - action: utter_agiz_yaralari
+
+- story: Kabızlık tedavisi
+  steps:
+    - intent: kabizlik
+    - action: utter_kabizlik
+
+- story: Mide yanması tedavisi
+  steps:
+    - intent: mide_yanmasi
+    - action: utter_mide_yanmasi
+
+- story: Baş dönmesi tedavisi
+  steps:
+    - intent: bas_donmesi
+    - action: utter_bas_donmesi
+
+- story: Kulak çınlaması tedavisi
+  steps:
+    - intent: kulak_cinlamasi
+    - action: utter_kulak_cinlamasi
+
+- story: Göz seyirmesi tedavisi
+  steps:
+    - intent: goz_seyirmesi
+    - action: utter_goz_seyirmesi
+
+- story: Uçuk tedavisi
+  steps:
+    - intent: ucuk
+    - action: utter_ucuk
+
+- story: Diş eti kanaması tedavisi
+  steps:
+    - intent: dis_eti_kanamasi
+    - action: utter_dis_eti_kanamasi
+
+- story: Bağışıklık güçsüzlüğü tedavisi
+  steps:
+    - intent: bagisiklik_gucsuzlugu
+    - action: utter_bagisiklik_gucsuzlugu
+
+- story: Uyku problemleri tedavisi
+  steps:
+    - intent: uyku_problemleri
+    - action: utter_uyku_problemleri
+
+- story: Adet düzensizliği tedavisi
+  steps:
+    - intent: adet_duzensizligi
+    - action: utter_adet_duzensizligi
+
+- story: Adet sancısı tedavisi
+  steps:
+    - intent: adet_sancisi
+    - action: utter_adet_sancisi

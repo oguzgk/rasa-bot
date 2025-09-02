@@ -1,0 +1,398 @@
+nlu:
+- intent: bas_agrisi
+  examples: |
+    - başım ağrıyor
+    - migrenim var
+    - baş ağrısına iyi gelen bir şey var mı?
+    - migrene ne önerirsiniz?
+    - baş ağrısı nasıl geçer?
+    - başım çok ağrıyor ne yapmalıyım?
+    - baş ağrısı için doğal çözümler nelerdir?
+    - şiddetli baş ağrısına ne iyi gelir?
+    - stres kaynaklı baş ağrısı nasıl geçer?
+    - sinüzit baş ağrısı için ne yapabilirim?
+    - baş ağrısı için bitkisel çözümler nelerdir?
+
+- intent: mide_bulantisi
+  examples: |
+    - Mide bulantım var.
+    - Mide bulantısı neden olur?
+    - Mide bulantısına ne iyi gelir?
+    - Araç tutması sonucu mide bulantısı yaşıyorum.
+    - Mide bulantısını nasıl geçirebilirim?
+    - Hamilelikten dolayı mide bulantım var, ne yapmalıyım?
+
+- intent: ishal
+  examples: |
+    - İshal oldum.
+    - İshale ne iyi gelir?
+    - İshal neden olur?
+    - Gıda zehirlenmesi sonrası ishal yaşıyorum.
+    - İshali nasıl geçirebilirim?
+    - İshal için ne yemeliyim?
+
+- intent: soguk_alginligi
+  examples: |
+    - Soğuk algınlığım var.
+    - Nezleye ne iyi gelir?
+    - Nezle nasıl geçer?
+    - Soğuk algınlığı neden olur?
+    - Mevsim geçişlerinde sürekli hasta oluyorum.
+    - Soğuk algınlığı için doğal çözümler nelerdir?
+
+- intent: bogaz_agrisi
+  examples: |
+    - Boğaz ağrım var.
+    - Boğaz ağrısına ne iyi gelir?
+    - Boğaz ağrısını nasıl geçirebilirim?
+    - Enfeksiyona bağlı boğaz ağrısı çekiyorum.
+    - Bal ve limon boğaz ağrısına iyi gelir mi?
+    - Boğaz ağrısı için bitki çayı önerir misiniz?
+
+- intent: uykusuzluk
+  examples: |
+    - Uykusuzluk çekiyorum.
+    - Uykusuzluk neden olur?
+    - Uyuyamıyorum, ne yapmalıyım?
+    - Stres yüzünden uyuyamıyorum.
+    - Uykusuzluk için bitki çayı önerir misiniz?
+    - Melatonin takviyeleri işe yarar mı?
+
+- intent: goz_yorgunlugu
+  examples: |
+    - Gözlerim çok yorgun.
+    - Göz yorgunluğu neden olur?
+    - Ekrana bakmaktan gözlerim yoruldu.
+    - Göz yorgunluğu için ne yapabilirim?
+    - Gözlerim dinlenmiyor, ne önerirsiniz?
+    - Göz damlaları işe yarar mı?
+
+- intent: sirt_agrisi
+  examples: |
+    - Sırtım ağrıyor.
+    - Sırt ağrısına ne iyi gelir?
+    - Yanlış duruştan sırt ağrısı çekiyorum.
+    - Sırt ağrısını nasıl geçirebilirim?
+    - Hafif egzersizler sırt ağrısına iyi gelir mi?
+    - Sırt ağrısı için masaj önerir misiniz?
+
+- intent: gaz_siskinlik
+  examples: |
+    - Gaz problemim var.
+    - Şişkinlik yaşıyorum.
+    - Gaz ve şişkinlik neden olur?
+    - Sindirim sorunlarından dolayı şişkinlik çekiyorum.
+    - Gaz ve şişkinliğe ne iyi gelir?
+    - Nane çayı şişkinliği geçirir mi?
+
+- intent: burun_tikanikligi
+  examples: |
+    - Burnum tıkalı.
+    - Burun tıkanıklığı neden olur?
+    - Burnumun açılması için ne yapabilirim?
+    - Gripten dolayı burnum tıkandı.
+    - Tuzlu su burun tıkanıklığına iyi gelir mi?
+    - Gece burun tıkanıklığı çekiyorum, ne önerirsiniz?
+
+- intent: kulak_agrisi
+  examples: |
+    - Kulak ağrım var.
+    - Kulak ağrısına ne iyi gelir?
+    - Enfeksiyona bağlı kulak ağrısı çekiyorum.
+    - Kulak ağrısını nasıl geçirebilirim?
+    - Ilık kompres kulak ağrısına iyi gelir mi?
+    - Uçak yolculuğu sonrası kulak ağrısı yaşıyorum.
+
+- intent: cilt_kurulugu
+  examples: |
+    - Cildim çok kuru.
+    - Cilt kuruluğuna ne iyi gelir?
+    - Soğuk havalardan dolayı cildim kuruyor.
+    - Cilt kuruluğu neden olur?
+    - Nemlendirici kullanmak işe yarar mı?
+    - Kuru cilt için doğal yöntemler nelerdir?
+
+- intent: hemoroid
+  examples: |
+    - hemoroidim var ne yapabilirim?
+    - hemoroid ağrısı için öneriniz var mı?
+    - evde hemoroide ne iyi gelir?
+    - hemoroid nasıl geçer?
+    - doğal yöntemlerle hemoroid tedavisi
+    - hemoroid tedavisi var mı?
+
+- intent: benler
+  examples: |
+    - cildimde çok fazla ben var
+    - yeni çıkan benler için ne yapmalıyım?
+    - ben aldırma işlemi nasıl olur?
+    - benler neden oluşur?
+    - benler zararlı mı?
+    - ciltteki benler için çözüm var mı?
+
+- intent: cilt_lekeleri
+  examples: |
+    - yüzümde cilt lekeleri oluştu
+    - güneş lekeleri için ne yapmalıyım?
+    - cilt lekelerine iyi gelen doğal çözümler
+    - cilt lekelerini nasıl azaltırım?
+    - evde cilt lekesi tedavisi
+    - cilt lekeleri neden olur?
+
+- intent: sac_dokulmesi
+  examples: |
+    - saçlarım çok dökülüyor
+    - saç dökülmesine iyi gelen bir şey var mı?
+    - saç dökülmesi nasıl durdurulur?
+    - saç dökülmesi için doğal yöntemler
+    - stres saç dökülmesi yapar mı?
+    - saç dökülmesi neden olur?
+
+- intent: sivilce
+  examples: |
+    - yüzümde çok sivilce çıktı
+    - sivilce nasıl geçer?
+    - doğal sivilce tedavisi var mı?
+    - ergenlik sivilcelerine ne önerirsiniz?
+    - yüzümdeki sivilceler için maske önerisi
+    - sivilce izleri nasıl geçer?
+
+- intent: egzama
+  examples: |
+    - egzama için ne yapmalıyım?
+    - egzama nasıl tedavi edilir?
+    - egzama kaşıntısına ne iyi gelir?
+    - evde egzama tedavisi var mı?
+    - egzama neden olur?
+    - egzama için doğal çözümler nelerdir?
+
+- intent: mantar_enfeksiyonlari
+  examples: |
+    - ayak mantarım var ne yapmalıyım?
+    - mantar enfeksiyonu nasıl tedavi edilir?
+    - vajinal mantara ne iyi gelir?
+    - mantar için doğal çözümler
+    - mantar neden olur?
+    - mantar enfeksiyonundan nasıl korunurum?
+
+- intent: goz_enfeksiyonlari
+  examples: |
+    - gözümde enfeksiyon var
+    - göz enfeksiyonu için ne yapabilirim?
+    - gözde çapaklanma nasıl geçer?
+    - göz enfeksiyonu için evde çözüm var mı?
+    - enfeksiyon nedeniyle gözüm kızardı
+    - göz enfeksiyonuna iyi gelen damlalar nelerdir?
+
+- intent: dis_agrisi
+  examples: |
+    - dişim çok ağrıyor
+    - diş ağrısına ne iyi gelir?
+    - diş ağrısı nasıl geçer?
+    - evde diş ağrısını ne geçirir?
+    - diş ağrısı için doğal çözümler
+    - diş ağrısı neden olur?
+
+- intent: agiz_yaralari
+  examples: |
+    - ağzımda yara çıktı
+    - ağız yarasına ne iyi gelir?
+    - ağız içindeki yaralar nasıl geçer?
+    - evde ağız yarası tedavisi
+    - ağız yaraları neden olur?
+    - ağız yaralarına iyi gelen bitkisel çözümler
+
+- intent: kabizlik
+  examples: |
+    - kabız oldum ne yapmalıyım?
+    - kabızlığa ne iyi gelir?
+    - kabızlık nasıl geçer?
+    - kabızlık için doğal yöntemler
+    - kabızlık çayı tarifi
+    - kabızlık neden olur?
+
+- intent: mide_yanmasi
+  examples: |
+    - midem yanıyor
+    - mide yanmasına ne iyi gelir?
+    - mide yanması nasıl geçer?
+    - asit reflü nasıl tedavi edilir?
+    - mide yanması için evde çözüm
+    - mide yanması neden olur?
+
+- intent: bas_donmesi
+  examples: |
+    - başım dönüyor
+    - baş dönmesine ne iyi gelir?
+    - baş dönmesi nasıl geçer?
+    - baş dönmesinin nedeni nedir?
+    - baş dönmesine karşı doğal çözümler
+    - aniden başım döndü, ne yapmalıyım?
+
+- intent: kulak_cinlamasi
+  examples: |
+    - kulağım çınlıyor
+    - kulak çınlamasına ne iyi gelir?
+    - kulak çınlaması nasıl geçer?
+    - kulak çınlaması neden olur?
+    - kulak çınlamasına karşı bitkisel çözümler
+    - kulak çınlaması için doktora gitmeli miyim?
+
+- intent: goz_seyirmesi
+  examples: |
+    - gözüm seyiriyor
+    - göz seyirmesi neden olur?
+    - göz seyirmesine ne iyi gelir?
+    - göz seyirmesi nasıl geçer?
+    - stres göz seyirmesi yapar mı?
+    - sağ gözüm sürekli seyiriyor, çözüm var mı?
+
+- intent: ucuk
+  examples: |
+    - dudağımda uçuk çıktı
+    - uçuk nasıl geçer?
+    - uçuk tedavisi var mı?
+    - uçuk için doğal çözümler
+    - uçuk neden olur?
+    - uçuğu nasıl önleyebilirim?
+
+- intent: dis_eti_kanamasi
+  examples: |
+    - diş etlerim kanıyor
+    - diş eti kanaması nasıl geçer?
+    - diş eti kanamasına ne iyi gelir?
+    - evde diş eti kanaması tedavisi
+    - diş eti kanaması neden olur?
+    - diş eti kanaması için doğal çözümler
+
+- intent: bagisiklik_gucsuzlugu
+  examples: |
+    - bağışıklık sistemim çok zayıf.
+    - bağışıklık güçsüzlüğü nasıl giderilir?
+    - bağışıklık sistemimi nasıl güçlendirebilirim?
+    - vücudum çok kolay hasta oluyor, ne yapabilirim?
+    - bağışıklığı güçlendiren bitkiler nelerdir?
+    - bağışıklık sistemi neden zayıflar?
+
+- intent: gaz_siskinlik
+  examples: |
+    - sürekli gaz problemim var.
+    - gaz sancısı yaşıyorum.
+    - şişkinliğim var, ne yapabilirim?
+    - gaz ve şişkinlik için doğal çözümler nelerdir?
+    - gaz yapan yiyeceklerden nasıl uzak durabilirim?
+    - karnımda sürekli şişlik hissi var.
+
+- intent: uyku_problemleri
+  examples: |
+    - uykusuzluk yaşıyorum.
+    - uyuyamıyorum, ne yapmalıyım?
+    - rahat bir uyku için önerileriniz var mı?
+    - uyku düzenim bozuk, çözüm var mı?
+    - uykuya dalmakta çok zorlanıyorum.
+    - uykusuzluğa iyi gelen bitkiler nelerdir?
+
+- intent: adet_duzensizligi
+  examples: |
+    - adetim düzensizleşti.
+    - adet döngüm bozuldu, neden olabilir?
+    - adet düzenleyici bitkisel çözümler var mı?
+    - regl tarihimi nasıl düzene sokabilirim?
+    - adet gecikmesi için ne önerirsiniz?
+    - adet düzensizliğim için doğal yöntemler nelerdir?
+
+- intent: adet_sancisi
+  examples: |
+    - regl dönemimde çok sancı çekiyorum.
+    - adet sancısını nasıl hafifletebilirim?
+    - adet sancısına iyi gelen bitkiler var mı?
+    - regl ağrılarım için doğal çözümler nelerdir?
+    - sancılı geçen regl dönemim için önerileriniz var mı?
+    - adet ağrısını hafifletmek için ne yapabilirim?
+
+- intent: greet
+  examples: |
+    - merhaba
+    - selam
+    - hey
+    - günaydın
+    - iyi günler
+    - iyi akşamlar
+    - nasılsın
+    - merhaba nasılsın
+    - selamlar
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+

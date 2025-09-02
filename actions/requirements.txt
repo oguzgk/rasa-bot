@@ -1,0 +1,3 @@
+rasa-sdk==2.8.1
+requests
+# vs. diğer action bağımlılıkların

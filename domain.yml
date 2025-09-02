@@ -1,0 +1,600 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bas_agrisi
+  - mide_bulantisi
+  - ishal
+  - soguk_alginligi
+  - bogaz_agrisi
+  - uykusuzluk
+  - goz_yorgunlugu
+  - sirt_agrisi
+  - gaz_siskinlik
+  - burun_tikanikligi
+  - kulak_agrisi
+  - cilt_kurulugu
+  - hemoroid
+  - benler
+  - cilt_lekeleri
+  - sac_dokulmesi
+  - sivilce
+  - egzama
+  - mantar_enfeksiyonlari
+  - goz_enfeksiyonlari
+  - dis_agrisi
+  - agiz_yaralari
+  - kabizlik
+  - mide_yanmasi
+  - bas_donmesi
+  - kulak_cinlamasi
+  - goz_seyirmesi
+  - ucuk
+  - dis_eti_kanamasi
+  - bagisiklik_gucsuzlugu
+  - uyku_problemleri
+  - adet_duzensizligi
+  - adet_sancisi
+
+responses:
+  utter_greet:
+  - text: "Merhaba, size nasıl yardımcı olabilirim?"
+
+  utter_cheer_up:
+  - text: "Merhaba, nasıl yardımcı olabilirim?"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Nasıl yardımcı olabilirim?"
+
+  utter_happy:
+  - text: "Harika, devam edin!"
+
+  utter_goodbye:
+  - text: "Görüşmek üzere!"
+
+  utter_iamabot:
+  - text: "Ben bir bot, Rasa tarafından destekleniyorum."
+
+  utter_bas_agrisi:
+  - text: |
+      Baş Ağrısı İçin: Zencefil Çayı
+      Faydaları:
+      Zencefil, anti-inflamatuar özellikleri sayesinde baş ağrısını hafifletmeye yardımcı olabilir. Ayrıca mide bulantısını da azaltabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - 1 su bardağı su
+      - İsteğe bağlı olarak bal ve limon
+      Yapılışı:
+      1. Suyu kaynatın.
+      2. Kaynar suya rendelenmiş zencefili ekleyin.
+      3. 5-10 dakika demlemeye bırakın.
+      4. Süzerek fincana alın.
+      5. İsteğe bağlı olarak bal ve limon ekleyerek tüketin.
+      Not: Zencefile karşı alerjiniz varsa veya kan sulandırıcı ilaç kullanıyorsanız, zencefil tüketiminden kaçınmalısınız.
+
+  utter_mide_bulantisi:
+  - text: |
+      Mide Bulantısı İçin: Nane Çayı
+      Faydaları: 
+      Nane, mide kaslarını gevşeterek bulantıyı azaltabilir ve sindirimi destekleyebilir.
+      Malzemeler: 
+      - 1 tatlı kaşığı kuru nane veya birkaç taze nane yaprağı 
+      - 1 su bardağı su 
+      - İsteğe bağlı olarak bal
+      Yapılışı:
+      1. Suyu kaynatın.
+      2. Kaynar suya nane yapraklarını ekleyin.
+      3. 5-10 dakika demlemeye bırakın.
+      4. Süzerek fincana alın.
+      5. İsteğe bağlı olarak bal ekleyerek tüketin.
+      Not: Nane, reflü şikayetlerini artırabileceğinden, reflü sorunu yaşayan bireylerin dikkatli tüketmesi önerilir.
+
+  utter_ishal:
+  - text: |
+      İshal İçin: Pirinç Suyu
+      Faydaları:
+      Pirinç suyu, sindirimi düzenlemeye yardımcı olabilir ve ishal nedeniyle kaybedilen sıvının yerine konmasına katkı sağlayabilir.
+      Malzemeler:
+      - Yarım su bardağı pirinç
+      - 4 su bardağı su
+      Yapılışı:
+      1. Pirinçleri iyice yıkayın.
+      2. Suyu kaynatın ve pirinci ekleyin.
+      3. Pirinçler yumuşayana kadar yaklaşık 15-20 dakika pişirin.
+      4. Karışımı süzün ve elde edilen suyu oda sıcaklığına gelene kadar soğutun.
+      5. Gün içinde küçük yudumlarla tüketin.
+      Not: Pirinç alerjisi nadir olsa da, böyle bir durumunuz varsa bu içeceği tüketmeyin.
+
+  utter_soguk_alginligi:
+  - text: |
+      Soğuk Algınlığı İçin: Zencefil ve Bal Karışımı
+      Faydaları:
+      Zencefil, anti-inflamatuar ve antioksidan özellikleriyle bağışıklık sistemini desteklerken, bal antibakteriyel özellikleriyle boğazı yatıştırabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - 1 tatlı kaşığı bal
+      - 1 su bardağı sıcak su
+      - İsteğe bağlı olarak limon dilimi
+      Yapılışı:
+      1. Sıcak suya rendelenmiş zencefili ekleyin.
+      2. 5-10 dakika demlemeye bırakın.
+      3. Süzerek fincana alın.
+      4. Balı ekleyip karıştırın.
+      5. İsteğe bağlı olarak limon dilimi ekleyerek tüketin.
+      Not: Zencefil ve bala karşı alerjiniz varsa veya kan sulandırıcı ilaç kullanıyorsanız, bu karışımı tüketmeden önce doktorunuza danışın.
+
+  utter_bogaz_agrisi:
+  - text: |
+      Boğaz Ağrısı İçin: Adaçayı Çayı
+      Faydaları:
+      Adaçayı, boğazı yumuşatarak ağrıyı hafifletebilir ve antiseptik özellikleri sayesinde enfeksiyonla mücadeleye yardımcı olabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı kuru adaçayı yaprağı
+      - 1 su bardağı su
+      - İsteğe bağlı olarak bal ve limon
+      Yapılışı:
+      1. Suyu kaynatın: Bir su ısıtıcısı veya tencerede suyu kaynatın.
+      2. Adaçayını ekleyin: Kaynar suyu bir demliğe veya bardağa alın. İçine adaçayını ekleyin.
+      3. Demleyin: Adaçayının 5-7 dakika kadar demlenmesini bekleyin. Bu süre, adaçayının türüne ve istediğiniz yoğunluğa göre değişebilir. Daha yoğun bir tat için daha uzun süre demleyebilirsiniz.
+      4. Süzün: Demlenen çayı süzerek bardağınıza alın.
+      5. Tatlandırın (isteğe bağlı): Adaçayınızı bal veya limon ile tatlandırabilirsiniz. Bal, adaçayının tadını yumuşatırken, limon ise daha ferahlatıcı bir lezzet verir.
+      İpuçları:
+      - Taze adaçayı: Taze adaçayı kullanacaksanız, yapraklarını yıkamayı ve ince ince doğramayı unutmayın.
+      - Suyun sıcaklığı: Adaçayını çok yüksek sıcaklıkta demlemek, acı bir tat oluşmasına neden olabilir. Bu nedenle, suyun kaynama noktasından biraz soğumasını beklemek daha iyi olacaktır.
+      - Demleme süresi: Demleme süresini deneyerek kendinize göre ayarlayabilirsiniz. Daha uzun süre demleyerek daha yoğun bir aroma elde edebilirsiniz.
+      - Saklama: Adaçayını buzdolabında birkaç gün saklayabilirsiniz. Ancak, taze demlenmiş adaçayı daha lezzetli olacaktır.
+      Not: Herhangi bir sağlık sorununuz varsa, adaçayı tüketmeden önce doktorunuza danışmanız önerilir.
+
+  utter_uykusuzluk:
+  - text: |
+      Uykusuzluk İçin: Papatya Çayı
+      Faydaları:
+      Papatya çayı, doğal bir sakinleştirici olarak bilinir ve uyku kalitesini artırmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş papatya çiçeği
+      - 1 su bardağı su
+      - İsteğe bağlı olarak bal veya limon
+      Yapılışı:
+      1. Suyu kaynatın.
+      2. Kaynar suya papatya çiçeklerini ekleyin.
+      3. 5-10 dakika demlemeye bırakın.
+      4. Süzerek fincana alın.
+      5. İsteğe bağlı olarak bal veya limon ekleyerek tüketin.
+      Not: Papatyaya karşı alerjiniz varsa veya hamileyseniz, papatya çayı tüketmeden önce doktorunuza danışın.
+
+  utter_goz_yorgunlugu:
+  - text: |
+      Göz Yorgunluğu İçin: Yaban Mersini Smoothie
+      Faydaları:
+      Yaban mersini, yüksek antioksidan içeriği sayesinde göz sağlığını destekler ve göz yorgunluğunu azaltmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 su bardağı taze veya donmuş yaban mersini
+      - 1 adet muz
+      - 1 su bardağı süt veya badem sütü
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Tüm malzemeleri blender'a ekleyin.
+      2. Pürüzsüz bir kıvam alana kadar karıştırın.
+      3. Bardağa dökerek hemen tüketin.
+
+  utter_sirt_agrisi:
+  - text: |
+      Sırt Ağrısı İçin: Zerdeçal Sütü (Altın Süt)
+      Faydaları:
+      Zerdeçal, anti-inflamatuar özellikleri sayesinde kas ve eklem ağrılarını hafifletmeye yardımcı olabilir.
+      Malzemeler:
+      - 1 su bardağı süt (isteğe bağlı olarak badem veya hindistancevizi sütü)
+      - 1 çay kaşığı toz zerdeçal
+      - Yarım çay kaşığı toz zencefil
+      - Yarım çay kaşığı tarçın
+      - 1 tatlı kaşığı bal
+      - Bir tutam karabiber
+      Yapılışı:
+      1. Sütü bir tencereye dökün ve ısıtmaya başlayın.
+      2. Zerdeçal, zencefil, tarçın ve karabiberi ekleyin.
+      3. Karışımı karıştırarak 5 dakika kadar ısıtın, ancak kaynamamasına dikkat edin.
+      4. Ocaktan alın, balı ekleyin ve karıştırın.
+      5. Fincana dökerek sıcak olarak tüketin.
+      Not: Zerdeçal ve zencefil, kan sulandırıcı ilaçlarla etkileşime girebilir. Düzenli ilaç kullanıyorsanız veya alerjiniz varsa, bu içeceği tüketmeden önce doktorunuza danışın.
+
+  utter_gaz_siskinlik:
+  - text: |
+      Gaz ve Şişkinlik İçin: Rezene Çayı
+      Faydaları:
+      Rezene, sindirimi destekler ve gaz ile şişkinlik şikayetlerini azaltmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı rezene tohumu
+      - 1 su bardağı su
+      Yapılışı:
+      1. Suyu kaynatın.
+      2. Kaynar suya rezene tohumlarını ekleyin.
+      3. 5-10 dakika demlemeye bırakın.
+      4. Süzerek fincana alın ve sıcak olarak tüketin.
+      Not: Rezeneye karşı alerjiniz varsa veya hamileyseniz, rezene çayı tüketmeden önce doktorunuza danışın.
+
+  utter_burun_tikanikligi:
+  - text: |
+      Burun Tıkanıklığı İçin: Nane ve Zencefil Çayı
+      Faydaları:
+      Nane ve zencefil, burun tıkanıklığını azaltmaya ve solunum yollarını açmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - Birkaç taze nane yaprağı
+      - 1 su bardağı su
+      - İsteğe bağlı olarak bal ve limon
+      Yapılışı:
+      1. Suyu kaynatın.
+      2. Kaynar suya zencefil ve nane yapraklarını ekleyin.
+      3. 5-10 dakika demlemeye bırakın.
+      4. Süzerek fincana alın.
+
+  utter_kulak_agrisi:
+  - text: |
+      Kulak Ağrısı İçin İçecek Tarifi
+      Uyarı: Kulak ağrısının birçok nedeni olabilir. Bu tarifler ağrının semptomlarını hafifletmeye yardımcı olabilir ancak altta yatan nedeni tedavi etmez.
+      İçecek: Zencefil Çayı
+      Faydaları:
+      Zencefil, anti-inflamatuar özellikleri sayesinde kulak ağrısına bağlı iltihabı azaltmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 parça taze zencefil (yaklaşık 2 cm)
+      - 1 su bardağı su
+      - Bal (isteğe bağlı)
+      Yapılışı:
+      1. Zencefili yıkayıp rendeleyin.
+      2. Suyu kaynatın ve içine rendelenmiş zencefili ekleyin.
+      3. 5-10 dakika demleyin.
+      4. İsteğe bağlı olarak bal ekleyerek tatlandırabilirsiniz.
+      5. Ilık olarak tüketin.
+      Alerjik Durumlar: Zencefilir alerjisi olan kişiler bu çayı tüketmemelidir.
+
+  utter_cilt_kurulugu:
+  - text: |
+      Cilt Kuruluğu İçin: Aloe Vera Suyu
+      Faydaları:
+      Aloe vera, ciltteki nemi koruyarak kuruluğu azaltır. Ayrıca ciltteki iltihabı yatıştırır ve yenilenmeyi destekler.
+      Malzemeler:
+      - 1 yaprak aloe vera
+      - 1 su bardağı soğuk su
+      Yapılışı:
+      1. Aloe vera yaprağını yarıdan keserek iç kısmındaki jeli çıkarın.
+      2. Jeli küçük parçalar halinde doğrayın.
+      3. Doğradığınız jeli ve suyu blender'da pürüzsüz olana kadar karıştırın.
+      4. Karışımı süzerek bir bardağa alın.
+      5. Buzdolabında soğutup için.
+      Not: Aloe verayı ilk kez kullanıyorsanız, küçük bir alanda cilt testini yaparak alerjik reaksiyon olup olmadığını kontrol edin.
+
+  utter_sac_dokulmesi:
+  - text: |
+      Saç Dökülmesi İçin: Isırgan Otu Çayı
+      Faydaları:
+      Isırgan otu, saç köklerini güçlendirerek saç dökülmesini önlemeye yardımcı olur. Ayrıca saç derisini besler ve kaşıntıyı azaltır.
+      Malzemeler:
+      - 2 yemek kaşığı kurutulmuş ısırgan otu
+      - 1 su bardağı kaynar su
+      Yapılışı:
+      1. Isırgan otunu bir kaba alın ve üzerine kaynar suyu dökün.
+      2. 15-20 dakika demleyin.
+      3. Çayı süzerek bir kaba alın.
+      4. Soğuduktan sonra saç derinize masaj yaparak uygulayın.
+      5. 30 dakika beklettikten sonra saçlarınızı şampuanla yıkayın.
+      Not: Isırgan otu, bazı kişilerde ciltte tahrişe neden olabilir. İlk kullanımda küçük bir alanda test etmeniz önerilir.
+
+  utter_hemoroid:
+  - text: |
+      Hemoroid İçin: Soğuk Aloe Vera Smoothie
+      Faydaları:
+      Aloe vera, anti-enflamatuar özellikleriyle hemoroid semptomlarını hafifletmeye yardımcı olabilir. Ayrıca bağırsak sağlığını destekler ve rahatlatıcı bir etki sunar.
+      Malzemeler:
+      - 2 yemek kaşığı taze aloe vera jeli
+      - 1 adet muz
+      - 1 su bardağı hindistancevizi sütü veya badem sütü
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      - Birkaç küp buz
+      Yapılışı:
+      1. Tüm malzemeleri blender'a ekleyin.
+      2. Pürüzsüz bir kıvam alana kadar karıştırın.
+      3. Soğuk olarak tüketin.
+      Not:
+      Aloe vera tüketimi aşırıya kaçmamalıdır. Aloe veraya alerjiniz varsa veya hamileyseniz kullanmadan önce doktorunuza danışın.
+
+  utter_benler:
+  - text: |
+      Benler İçin: Yeşil Çay ve Limon Kürü
+      Faydaları:
+      Yeşil çay, cilt hücrelerini yenileyen antioksidanlar içerir ve limon cildin rengini açıcı özellikleriyle bilinir. Bu içecek cilt sağlığını genel olarak destekler.
+      Malzemeler:
+      - 1 poşet yeşil çay
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı taze sıkılmış limon suyu
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Yeşil çay poşetini sıcak suya ekleyin ve 5 dakika demleyin.
+      2. Limon suyunu ve balı ekleyip karıştırın.
+      3. Ilık veya soğuk olarak tüketin.
+      Not:
+      Limon asidik olduğu için mide problemlerine neden olabilir. Ayrıca, güneşe çıkmadan önce limon tüketiminin dikkatle yapılması gerekir.
+
+  utter_cilt_lekeleri:
+  - text: |
+      Cilt Lekeleri İçin: Zerdeçallı Altın Süt
+      Faydaları:
+      Zerdeçal, cilt tonunu eşitlemeye ve lekeleri hafifletmeye yardımcı olan anti-inflamatuar özelliklere sahiptir.
+      Malzemeler:
+      - 1 su bardağı süt (isteğe bağlı olarak bitkisel süt)
+      - 1 çay kaşığı toz zerdeçal
+      - Yarım çay kaşığı tarçın
+      - 1 tatlı kaşığı bal
+      - Bir tutam karabiber
+      Yapılışı:
+      1. Sütü bir cezveye alın ve zerdeçal, tarçın, ve karabiberi ekleyin.
+      2. Orta ateşte ısıtarak karıştırın (kaynamamasına dikkat edin).
+      3. Ocaktan alın, balı ekleyin ve karıştırın.
+      4. Sıcak olarak tüketin.
+      Not:
+      Zerdeçal, bazı ilaçlarla etkileşime girebilir. Düzenli ilaç kullanıyorsanız doktorunuza danışın.
+
+  utter_sivilce:
+  - text: |
+      Sivilce İçin: Nane ve Salatalık Detoks İçeceği
+      Faydaları:
+      Nane ve salatalık, cildi nemlendirir ve yatıştırır. Ayrıca sivilce oluşumunu azaltmaya yardımcı olabilir.
+      Malzemeler:
+      - 1 litre su
+      - 1 adet salatalık (dilimlenmiş)
+      - Birkaç taze nane yaprağı
+      - 1 tatlı kaşığı limon suyu
+      Yapılışı:
+      1. Tüm malzemeleri bir sürahiye ekleyin.
+      2. Buzdolabında en az 2 saat bekletin.
+      3. Gün boyunca tüketin.
+      Not:
+      Taze nane bazı kişilerde alerjik reaksiyonlara neden olabilir.
+
+  utter_egzama:
+  - text: |
+      Egzama İçin: Karahindiba Çayı
+      Faydaları:
+      Karahindiba, cilt hastalıklarının iyileşmesine yardımcı olan antioksidanlar ve anti-inflamatuar bileşikler içerir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş karahindiba kökü veya yaprağı
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Karahindibayı sıcak suya ekleyin ve 10 dakika demleyin.
+      2. Süzerek fincana alın ve sıcak olarak tüketin.
+      Not:
+      Karahindiba bazı ilaçlarla etkileşime girebilir, doktorunuza danışmanız önerilir.
+
+  utter_mantar_enfeksiyonlari:
+  - text: |
+      Mantar Enfeksiyonları İçin: Tarçınlı Zencefil Çayı
+      Faydaları:
+      Tarçın ve zencefil, mantar enfeksiyonlarına karşı antimikrobiyal özellikler içerir. Bağışıklık sistemini destekler ve vücudu temizler.
+      Malzemeler:
+      - 1 çubuk tarçın
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Zencefil ve tarçını sıcak suya ekleyin.
+      2. 10 dakika demleyin ve süzün.
+      3. Bal ekleyerek ılık olarak tüketin.
+      Not: Tarçın kan sulandırıcı etkisi yapabilir. Kan sulandırıcı ilaç kullanıyorsanız dikkat edin.
+
+  utter_goz_enfeksiyonlari:
+  - text: |
+      Göz Enfeksiyonları İçin: Papatya Çayı
+      Faydaları:
+      Papatya, gözlerdeki enfeksiyonu yatıştırıcı ve rahatlatıcı etkiler sağlar. Ayrıca anti-enflamatuar özelliklere sahiptir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş papatya
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Papatyayı sıcak suya ekleyin ve 5-7 dakika demleyin.
+      2. Süzerek fincana alın ve tüketin.
+      Not: Papatya polen alerjisi olan kişilerde alerjik reaksiyona neden olabilir.
+
+  utter_dis_agrisi:
+  - text: |
+      Diş Ağrısı İçin: Karanfilli Nane Çayı
+      Faydaları:
+      Karanfil, doğal bir ağrı kesici olarak bilinir ve antiseptik özelliklere sahiptir. Nane ise ferahlık sağlar ve ağrıyı hafifletebilir.
+      Malzemeler:
+      - 3-4 adet karanfil
+      - 1 tatlı kaşığı kuru nane
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Karanfil ve naneyi sıcak suya ekleyin.
+      2. 10 dakika demleyin ve süzün.
+      3. Ilık olarak tüketin.
+      Not: Karanfil yağına karşı hassasiyetiniz varsa tüketmeden önce doktorunuza danışın.
+
+  utter_agiz_yaralari:
+  - text: |
+      Ağız Yaraları İçin: Ballı Ihlamur Çayı
+      Faydaları:
+      Ihlamur, yatıştırıcı etkisiyle ağız yaralarını hafifletir. Bal, doğal bir antibakteriyeldir ve iyileşmeyi hızlandırır.
+      Malzemeler:
+      - 1 tatlı kaşığı ıhlamur
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı bal
+      Yapılışı:
+      1. Ihlamuru sıcak suya ekleyin ve 5-7 dakika demleyin.
+      2. Süzdükten sonra bal ekleyin ve karıştırın.
+      3. Ilık olarak tüketin.
+      Not: Bal, 1 yaş altındaki çocuklara verilmemelidir.
+
+  utter_kabizlik:
+  - text: |
+      Kabızlık İçin: Erik ve Zeytinyağı İçeceği
+      Faydaları:
+      Erik suyu bağırsak hareketlerini hızlandırır. Zeytinyağı ise sindirimi kolaylaştırır.
+      Malzemeler:
+      - 1 su bardağı erik suyu
+      - 1 tatlı kaşığı sızma zeytinyağı
+      Yapılışı:
+      1. Erik suyunu bir bardağa alın.
+      2. Zeytinyağını ekleyip karıştırın.
+      3. Sabahları aç karnına tüketin.
+      Not: Aşırı tüketim ishale neden olabilir, dikkatli olun.
+
+  utter_mide_yanmasi:
+  - text: |
+      Mide Yanması İçin: Rezene ve Anason Çayı
+      Faydaları:
+      Rezene ve anason, mideyi yatıştırıcı ve rahatlatıcı etkiler sunar. Asit seviyesini dengeleyebilir.
+      Malzemeler:
+      - 1 tatlı kaşığı rezene tohumu
+      - Yarım çay kaşığı anason tohumu
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Rezene ve anasonu sıcak suya ekleyin.
+      2. 5-7 dakika demleyin ve süzün.
+      3. Ilık olarak tüketin.
+      Not: Rezene ve anason alerjiniz varsa tüketmeyin.
+
+  utter_bas_donmesi:
+  - text: |
+      Baş Dönmesi İçin: Zencefil ve Limon Çayı
+      Faydaları:
+      Zencefil, dolaşımı düzenleyerek baş dönmesini hafifletir. Limon, enerji verir ve ferahlatıcıdır.
+      Malzemeler:
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - 1 tatlı kaşığı limon suyu
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Zencefili sıcak suya ekleyin ve 5 dakika demleyin.
+      2. Limon suyunu ekleyip karıştırın.
+      3. Ilık olarak tüketin.
+      Not: Zencefil, bazı kişilerde mide bulantısına neden olabilir.
+
+  utter_kulak_cinlamasi:
+  - text: |
+      Kulak Çınlaması İçin: Sarımsak ve Zeytinyağı Kürü
+      Faydaları:
+      Sarımsak, dolaşımı iyileştirerek kulak çınlamasını azaltabilir. Zeytinyağı ise rahatlatıcıdır.
+      Malzemeler:
+      - 1 diş ezilmiş sarımsak
+      - 2 yemek kaşığı zeytinyağı
+      Yapılışı:
+      1. Sarımsağı zeytinyağına ekleyip hafifçe ısıtın.
+      2. Soğuduktan sonra süzün.
+      3. Günde birkaç damla kulak çevresine masaj yaparak uygulayın.
+      Not: Doğrudan kulağa damlatmayın. Doktor tavsiyesi olmadan kullanmayın.
+
+  utter_goz_seyirmesi:
+  - text: |
+      Göz Seyirmesi İçin: Magnezyumlu Smoothie
+      Faydaları:
+      Ispanak ve muz, magnezyum içerikleriyle kas kasılmalarını ve göz seyirmesini azaltabilir.
+      Malzemeler:
+      - 1 su bardağı ıspanak
+      - 1 adet muz
+      - 1 su bardağı badem sütü
+      Yapılışı:
+      1. Tüm malzemeleri blender'da karıştırın.
+      2. Pürüzsüz bir kıvam alınca soğuk olarak tüketin.
+      Not: Ispanak alerjisi olanlar için uygun değildir.
+
+  utter_ucuk:
+  - text: |
+      Uçuk İçin: Melisa Çayı
+      Faydaları:
+      Melisa, antiviral özellikleriyle uçuklara iyi gelir ve stres seviyesini düşürerek tekrarlamayı önleyebilir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş melisa yaprağı
+      - 1 su bardağı sıcak su
+      Yapılışı:
+      1. Melisa yapraklarını sıcak suya ekleyin ve 5 dakika demleyin.
+      2. Süzerek fincana alın ve ılık olarak tüketin.
+      Not: Melisa bazı ilaçlarla etkileşime girebilir. Doktorunuza danışın.
+
+  utter_dis_eti_kanamasi:
+  - text: |
+      Diş Eti Kanaması İçin: Maydanozlu Limon Çayı
+      Faydaları:
+      Maydanoz, yüksek C vitamini içeriği sayesinde diş eti sağlığını destekler ve kanamaları azaltabilir. Limon da antiseptik özellikleriyle ağız hijyenine katkıda bulunur.
+      Malzemeler:
+      - 1 tutam taze maydanoz
+      - Yarım limonun suyu
+      - 1 su bardağı su
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Suyu kaynatın ve ocaktan alın.
+      2. İnce doğranmış maydanozu ekleyip 5 dakika demleyin.
+      3. Süzdükten sonra limon suyunu ve balı ekleyin.
+      4. Ilık olarak tüketin.
+      Not: Maydanoz, bazı kişilerde alerjik reaksiyonlara neden olabilir. Ayrıca, kan sulandırıcı ilaç kullananlar dikkatli tüketmelidir.
+
+  utter_bagisiklik_gucsuzlugu:
+  - text: |
+      Bağışıklık Güçsüzlüğü İçin: Zerdeçallı Süt (Altın Süt)
+      Faydaları:
+      Zerdeçal, güçlü anti-inflamatuar ve antioksidan özelliklere sahiptir, bağışıklık sistemini destekler.
+      Malzemeler:
+      - 1 su bardağı süt (isteğe bağlı bitkisel süt)
+      - 1 çay kaşığı toz zerdeçal
+      - Yarım çay kaşığı toz zencefil
+      - Bir tutam karabiber
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Sütü bir tencerede ısıtın.
+      2. Zerdeçal, zencefil ve karabiberi ekleyip karıştırın.
+      3. 5 dakika kısık ateşte ısıtmaya devam edin.
+      4. Ocaktan alıp bal ekleyin ve karıştırın.
+      5. Sıcak olarak tüketin.
+      Not: Zerdeçal, safra kesesi sorunları olan kişilerde rahatsızlık yaratabilir. Ayrıca, kan sulandırıcı ilaç kullananlar dikkatli olmalıdır.
+
+  utter_uyku_problemleri:
+  - text: |
+      Uyku Problemleri İçin: Papatya Çayı
+      Faydaları:
+      Papatya, doğal bir yatıştırıcıdır ve uyku kalitesini artırabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş papatya
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Papatyayı sıcak suya ekleyin ve 5-7 dakika demleyin.
+      2. Süzdükten sonra bal ekleyin ve karıştırın.
+      3. Ilık olarak, özellikle yatmadan önce tüketin.
+      Not: Papatya, ragweed (ambrosia) ailesine alerjisi olan kişilerde reaksiyonlara neden olabilir.
+
+  utter_adet_duzensizligi:
+  - text: |
+      Adet Düzensizliği İçin: Adaçayı Çayı
+      Faydaları:
+      Adaçayı, hormonal dengeyi destekleyerek adet döngüsünü düzenlemeye yardımcı olabilir.
+      Malzemeler:
+      - 1 tatlı kaşığı kurutulmuş adaçayı
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Adaçayını sıcak suya ekleyin ve 5 dakika demleyin.
+      2. Süzdükten sonra bal ekleyin ve karıştırın.
+      3. Ilık olarak tüketin.
+      Not: Adaçayı, hamilelik döneminde ve emziren anneler tarafından tüketilmemelidir. Ayrıca, tansiyon problemi olanlar dikkatli olmalıdır.
+
+  utter_adet_sancisi:
+  - text: |
+      Adet Sancısı İçin: Tarçınlı Zencefil Çayı
+      Faydaları:
+      Zencefil ve tarçın, anti-inflamatuar özellikleriyle adet sancılarını hafifletebilir.
+      Malzemeler:
+      - 1 tatlı kaşığı taze rendelenmiş zencefil
+      - 1 çubuk tarçın
+      - 1 su bardağı sıcak su
+      - 1 tatlı kaşığı bal (isteğe bağlı)
+      Yapılışı:
+      1. Zencefil ve tarçını sıcak suya ekleyin.
+      2. 10 dakika demleyin ve süzün.
+      3. Bal ekleyerek ılık olarak tüketin.
+      Not: Zencefil, kan sulandırıcı ilaç kullananlar tarafından dikkatli tüketilmelidir.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
