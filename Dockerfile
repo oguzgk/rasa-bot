@@ -12,7 +12,7 @@ RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r act
 
 # start script kopyala ve izni ver
 COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
+
 
 # Port: Render default olarak PORT=10000 kullanıyor, ama bunu Render dashboard'da değiştirebilirsin.
 ENV PORT=10000
@@ -20,4 +20,4 @@ ENV PORT=10000
 # EXPOSE sadece dokümantasyon amaçlı; Render port yönlendirmeyi kendi yapıyor.
 EXPOSE 10000 5055
 
-CMD ["/app/start.sh"]
+CMD ["bash", "/app/start.sh"]
