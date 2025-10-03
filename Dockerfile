@@ -1,5 +1,5 @@
 # Rasa 2.8.1 (full) kullanıyoruz
-FROM rasa/rasa:2.8.1-full
+FROM rasa/rasa:3.6.6-full
 
 WORKDIR /app
 
