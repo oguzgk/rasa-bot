@@ -1,10 +1,17 @@
-# Rasa 2.8.1 (full) kullanıyoruz
 FROM rasa/rasa:2.8.1-full
 
 WORKDIR /app
 
-# Kopyala
 COPY . /app
+
+# Memory optimizasyonu için environment variables
+ENV RASA_TELEMETRY_ENABLED=false
+ENV PORT=10000
+ENV PYTHONPATH=/app
+ENV MALLOC_TRIM_THRESHOLD_=100000
+
+# Rasa ve Actions server portları
+EXPOSE 10000 5055
 
 # actions bağımlılıklarını kur
 RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r actions/requirements.txt; fi
@@ -12,13 +19,8 @@ RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r act
 # start script kopyala
 COPY start.sh /app/start.sh
 
-# Rasa ve Actions server portları
-ENV PORT=5005
-
-EXPOSE 5005 5055
-
 # Önemli: önce entrypoint'i sıfırla
 ENTRYPOINT []
 
-# Artık gerçekten bash ile çalışacak
+# Bellek optimizasyonu için --enable-api flag'i ekle
 CMD ["bash", "/app/start.sh"]
