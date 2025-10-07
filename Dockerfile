@@ -18,12 +18,16 @@ ENV RASA_MEMORY_LIMIT=450m
 EXPOSE 10000 5055
 
 # Gereksiz dosyaları temizle ve pip cache'i temizle
-RUN rm -rf /root/.cache/pip && \
-    rm -rf /tmp/* && \
-    rm -rf /var/cache/apt/*
+USER root
+RUN rm -rf /root/.cache/pip || true && \
+    rm -rf /tmp/* || true && \
+    rm -rf /var/cache/apt/* || true
 
 # actions bağımlılıklarını minimal şekilde kur
 RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r actions/requirements.txt --no-deps; fi
+
+# Non-root kullanıcıya geç
+USER 1001
 
 COPY start.sh /app/start.sh
 ENTRYPOINT []
