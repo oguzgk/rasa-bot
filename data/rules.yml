@@ -14,3 +14,8 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+
+- rule: Respond to low-confidence messages (NLU Fallback)
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default

@@ -47,6 +47,9 @@ responses:
   utter_cheer_up:
   - text: "Merhaba, nasıl yardımcı olabilirim?"
     image: "https://i.imgur.com/nGF1K8f.jpg"
+    
+  utter_default:
+  - text: "Üzgünüm, ne demek istediğinizi anlayamadım. Lütfen tekrar dener misiniz?"
 
   utter_did_that_help:
   - text: "Nasıl yardımcı olabilirim?"

@@ -12,10 +12,10 @@ RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r act
 # start script kopyala
 COPY start.sh /app/start.sh
 
-# Render default port
-ENV PORT=10000
+# Rasa ve Actions server portları
+ENV PORT=5005
 
-EXPOSE 10000 5055
+EXPOSE 5005 5055
 
 # Önemli: önce entrypoint'i sıfırla
 ENTRYPOINT []
