@@ -9,18 +9,22 @@ ENV RASA_TELEMETRY_ENABLED=false
 ENV PORT=10000
 ENV PYTHONPATH=/app
 ENV MALLOC_TRIM_THRESHOLD_=100000
+ENV RASA_MODELSERVER_WORKERS=1
+ENV RASA_CORE_WORKERS=1
+ENV PYTHONUNBUFFERED=1
+ENV RASA_MEMORY_LIMIT=450m
 
 # Rasa ve Actions server portları
 EXPOSE 10000 5055
 
-# actions bağımlılıklarını kur
-RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r actions/requirements.txt; fi
+# Gereksiz dosyaları temizle ve pip cache'i temizle
+RUN rm -rf /root/.cache/pip && \
+    rm -rf /tmp/* && \
+    rm -rf /var/cache/apt/*
 
-# start script kopyala
+# actions bağımlılıklarını minimal şekilde kur
+RUN if [ -f "actions/requirements.txt" ]; then pip install --no-cache-dir -r actions/requirements.txt --no-deps; fi
+
 COPY start.sh /app/start.sh
-
-# Önemli: önce entrypoint'i sıfırla
 ENTRYPOINT []
-
-# Bellek optimizasyonu için --enable-api flag'i ekle
 CMD ["bash", "/app/start.sh"]

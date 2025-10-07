@@ -11,4 +11,4 @@ fi
 
 # Rasa server'ı başlat (PORT env değişkenini kullanır)
 echo "Starting Rasa server on port ${PORT}..."
-rasa run --enable-api --cors "*" --port ${PORT} --endpoints endpoints.yml
+rasa run --enable-api --cors "*" --port ${PORT} --endpoints endpoints.yml --memory-limit 450m
