@@ -17,11 +17,10 @@ fi
 
 # Start Rasa with minimal resources
 echo "Starting Rasa server on port ${PORT}..."
-rasa run --enable-api \
+rasa run \
+  --enable-api \
   --cors "*" \
   --port ${PORT} \
   --endpoints endpoints.yml \
   --debug \
-  --enable-api \
-  --log-file /tmp/rasa/rasa.log \
-  --host 0.0.0.0
+  --log-file /tmp/rasa/rasa.log

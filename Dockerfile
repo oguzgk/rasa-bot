@@ -25,8 +25,9 @@ ENV TF_FORCE_GPU_ALLOW_GROWTH=true
 ENV TF_CPP_MIN_LOG_LEVEL=2
 ENV TOKENIZERS_PARALLELISM=false
 ENV OMP_NUM_THREADS=1
-# Force IPv4 and specific host
-ENV HOST=0.0.0.0
+# Server configuration
+ENV RASA_SERVER_HOST="0.0.0.0"
+ENV RASA_SERVER_PORT="${PORT}"
 
 # Rasa ve Actions server portları
 EXPOSE 10000 5055
